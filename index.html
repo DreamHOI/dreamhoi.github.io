@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="We present DreamHOI, a novel method for zero-shot synthesis of human-object interactions (HOIs), enabling a 3D human model to realistically interact with any given object based on a textual description.">
-  <meta property="og:title" content="DreamHOI: Subject-Driven Generation of 3D Human-Object Interaction with Diffusion Priors"/>
-  <meta property="og:description" content="We present DreamHOI, a novel method for zero-shot synthesis of human-object interactions (HOIs), enabling a 3D human model to realistically interact with any given object based on a textual description."/>
-  <meta property="og:url" content="https://dreamhoi.github.io"/>
+  <meta name="description"
+    content="We present DreamHOI, a novel method for zero-shot synthesis of human-object interactions (HOIs), enabling a 3D human model to realistically interact with any given object based on a textual description.">
+  <meta property="og:title"
+    content="DreamHOI: Subject-Driven Generation of 3D Human-Object Interaction with Diffusion Priors" />
+  <meta property="og:description"
+    content="We present DreamHOI, a novel method for zero-shot synthesis of human-object interactions (HOIs), enabling a 3D human model to realistically interact with any given object based on a textual description." />
+  <meta property="og:url" content="https://dreamhoi.github.io" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
 
-  <meta name="twitter:title" content="DreamHOI: Subject-Driven Generation of 3D Human-Object Interaction with Diffusion Priors">
-  <meta name="twitter:description" content="We present DreamHOI, a novel method for zero-shot synthesis of human-object interactions (HOIs), enabling a 3D human model to realistically interact with any given object based on a textual description.">
+  <meta name="twitter:title"
+    content="DreamHOI: Subject-Driven Generation of 3D Human-Object Interaction with Diffusion Priors">
+  <meta name="twitter:description"
+    content="We present DreamHOI, a novel method for zero-shot synthesis of human-object interactions (HOIs), enabling a 3D human model to realistically interact with any given object based on a textual description.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
@@ -25,16 +31,15 @@
 
 
   <title>DreamHOI: Subject-Driven Generation of 3D Human-Object Interaction with Diffusion Priors</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚴</text></svg>">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚴</text></svg>">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -44,6 +49,7 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+
 <body>
 
 
@@ -52,50 +58,45 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">DreamHOI: Subject-Driven Generation of 3D Human-Object Interaction with Diffusion Priors</h1>
+            <h1 class="title is-1 publication-title">DreamHOI: Subject-Driven Generation of 3D Human-Object Interactions
+              with Diffusion Priors</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://thomaszhu.cn/" target="_blank">Thomas Zhu</a>,</span>
-                <span class="author-block">
-                  <a href="https://ruiningli.com/" target="_blank">Ruining Li</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="https://www.robots.ox.ac.uk/~tomj/" target="_blank">Tomas Jakab</a><sup>*</sup>
-                  </span>
-                  </div>
+                <a href="https://thomaszhu.cn/" target="_blank">Thomas Zhu</a><sup>1,2&dagger;
+                </sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://ruiningli.com/" target="_blank">Ruining
+                  Li</a><sup>1&ast;</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="author-block">
+                <a href="https://www.robots.ox.ac.uk/~tomj/" target="_blank">Tomas Jakab</a><sup>1&ast;</sup>
+              </span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">University of Oxford<br>In preprint</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates equal contribution</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>University of Oxford&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Carnegie
+                Mellon University<br>ArXiv
+                Preprint</span>
+              <span class="eql-cntrb"><small><br><sup>&dagger;</sup>Work done while at University of Oxford</small></span>  
+              <span class="eql-cntrb"><small><br><sup>*</sup>Equal advising</small></span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
                     </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/hanwenzhu/dreamhoi" target="_blank"
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/hanwenzhu/dreamhoi" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -107,206 +108,158 @@
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We present DreamHOI, a novel method for zero-shot synthesis of human-object interactions (HOIs), enabling a 3D human model to realistically interact with any given object based on a textual description. Our method addresses the challenge of deforming a human model to interact with objects of varying categories and geometries, a task complicated by the scarcity of datasets encompassing diverse HOIs. To circumvent the need for extensive data, we leverage text-to-image diffusion models trained on large-scale image-caption pairs to guide the synthesis process. We optimize the articulation of a skinned human mesh using Score Distillation Sampling (SDS) gradients from these models, which act as an image guidance. However, directly applying image-based gradients to complex articulation parameters is ineffective due to their local nature. To overcome this, we introduce a dual implicit-explicit representation of a skinned mesh, combining a Neural Radiance Field (NeRF) with bone rotation parameters. During optimization, we transition between implicit and explicit forms, grounding the NeRF generation while refining the mesh articulation. We validate our approach through extensive qualitative and quantitative experiments, demonstrating its effectiveness in generating realistic HOIs.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <!-- Your video here -->
+          <source src="static/videos/banner_video.mp4" type="video/mp4">
+        </video>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat
+          pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+  </section>
+  <!-- End teaser video -->
 
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              We present <b>DreamHOI</b>, a novel method for <i><b>zero-shot</b></i> synthesis of human-object interactions (HOIs), enabling
+              a 3D human model to realistically interact with any given object based on a textual description.
+              This task is complicated by the varying categories and geometries of real-world objects and the scarcity
+              of datasets encompassing diverse HOIs.
+              To circumvent the need for extensive data, we leverage text-to-image diffusion models trained on billions
+              of image-caption pairs.
+              We optimize the articulation of a skinned human mesh using Score Distillation Sampling (SDS) gradients
+              obtained from these models, which predict image-space edits.
+              However, directly backpropagating image-space gradients into complex articulation parameters is
+              ineffective due to the local nature of such gradients.
+              To overcome this, we introduce a dual implicit-explicit representation of a skinned mesh, combining
+              (implicit) neural radiance fields (NeRFs) with (explicit) skeleton-driven mesh articulation.
+              During optimization, we transition between implicit and explicit forms, grounding the NeRF generation
+              while refining the mesh articulation.
+              We validate our approach through extensive experiments, demonstrating its effectiveness in generating
+              realistic HOIs.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
+  </section>
+  <!-- End paper abstract -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
+  <!-- Method -->
+
+  <section class="section" id="Details">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Method</h2>
+          <td style="padding:20px;width:35%;vertical-align:middle">
+            <img src='static/images/method.png' width="1000">
+          </td>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <div class="content has-text-justified">
+            <p>
+              <b>DreamHOI</b> takes a human identity (in the form of a skinned body mesh) and an object mesh
+              <span style="font-style:italic;">M</span><sub>Obj</sub> (e.g., a 3D chair), together with their intended
+              interaction
+              (as a textual prompt, e.g., "sit"), as input.
+              It first fits a NeRF <span style="font-style:italic;">f<sub>θ<sub>0</sub></sub></span> for the human using
+              a mixture
+              of diffusion guidance and regularizers, and then estimates its pose <span
+                style="font-style:italic;">ξ<sub>0</sub></span>.
+              The posed human mesh <span style="font-style:italic;">M<sub>ξ<sub>t</sub></sub></span> is used to
+              re-initialize and further
+              optimize the NeRF <span style="font-style:italic;">f<sub>θ<sub>t</sub></sub></span>, for iterations
+              <span style="font-style:italic;">t &leq; T</span>.
+              The final output is the posed human <span style="font-style:italic;">M<sub>ξ<sub>T</sub></sub></span> at
+              the last iteration.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
-<!--End paper poster -->
+
+  <!-- End method-->
+
+  <!-- Results -->
 
 
-<!--BibTex citation -->
+
+  <!-- End results -->
+
+
+  <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>TODO</code></pre>
+      <pre><code>@article{zhu2024dreamhoi,
+  title     = {DreamHOI: Subject-Driven Generation of 3D Human-Object Interactions with Diffusion Priors},
+  author    = {Zhu, Hanwen and Li, Ruining and Jakab, Tomas},
+  journal   = {arXiv preprint arXiv:{ID}},
+  year      = {2024}
+}</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
+  <!--End BibTex citation -->
 
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+            <p>
+              This webpage template is adapted from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>,
+              <a href="https://3dmagicpony.github.io/">MagicPony</a>, and
+              <a href="https://dragapart.github.io/">DragAPart</a>, under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 License</a>.
+            </p>
 
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <!-- Statcounter tracking code -->
 
-    <!-- End of Statcounter Code -->
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-  </body>
-  </html>
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
