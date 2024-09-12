@@ -48,6 +48,7 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script src="static/js/dreamhoi-results-display.js"></script>
 </head>
 
 <body>
@@ -66,20 +67,20 @@
                 <a href="https://thomaszhu.cn/" target="_blank">Thomas Zhu</a><sup>1,2&dagger;
                 </sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
               <span class="author-block">
-                <a href="https://ruiningli.com/" target="_blank">Ruining
-                  Li</a><sup>1&ast;</sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://ruiningli.com/" target="_blank">Ruining Li</a><sup>1&ast;
+                </sup></span>&nbsp;&nbsp;&nbsp;&nbsp;
               <span class="author-block">
                 <a href="https://www.robots.ox.ac.uk/~tomj/" target="_blank">Tomas Jakab</a><sup>1&ast;</sup>
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>University of Oxford&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Carnegie
+              <div class="author-block"><sup>1</sup>University of Oxford&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Carnegie
                 Mellon University<br>ArXiv
-                Preprint</span>
-              <span class="eql-cntrb"><small><br><sup>&dagger;</sup>Work done while at University of
-                  Oxford</small></span>
-              <span class="eql-cntrb"><small><br><sup>*</sup>Equal advising</small></span>
+                Preprint</div>
+              <div class="eql-cntrb" style="margin: .2em 0 -.2em 0"><small><sup>&dagger;</sup>Work done while at University of
+                  Oxford</small></div>
+              <div class="eql-cntrb"><small><sup>*</sup>Equal advising</small></div>
             </div>
 
             <div class="column has-text-centered">
@@ -226,268 +227,16 @@
         <div class="column is-full-width">
           <h2 class="title is-3">More Results</h2>
 
-          <div class="example-grid-cat" style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="square-image">
-              <img src="static/images/human/human-1.png" alt="Dummy" style="opacity: 0; visibility: hidden;">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human/human-1.png">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human/human-2.png">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human/human-3.png">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human/human-4.png">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human/human-5.png">
-            </div>
-          </div>
+          <ul style="display: flex; justify-content: center; align-items: center; flex-flow: row wrap">
+            <li data-human-choice="obj_render" class="human-choice">No human</li>
+            <li data-human-choice="with_obj_render0" class="human-choice active">Human 1</li>
+            <li data-human-choice="with_obj_render1" class="human-choice">Human 2</li>
+            <li data-human-choice="with_obj_render2" class="human-choice">Human 3</li>
+            <li data-human-choice="with_obj_render3" class="human-choice">Human 4</li>
+            <li data-human-choice="with_obj_render4" class="human-choice">Human 5</li>
+          </ul>
 
-          <!-- doing yoga on a bed -->
-          <div class="example-grid-cat" style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="square-image">
-              <img src="static/images/human-yoga-bed-rot90/obj_render.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-yoga-bed-rot90/with_obj_render0.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-yoga-bed-rot90/with_obj_render1.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-yoga-bed-rot90/with_obj_render2.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-yoga-bed-rot90/with_obj_render3.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-yoga-bed-rot90/with_obj_render4.gif">
-            </div>
-          </div>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-full-width">
-                <p><i>doing yoga on a bed</i></p>
-            </div>
-          </div>
-
-           <!-- climbing stairs -->
-          <div class="example-grid-cat" style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="square-image">
-              <img src="static/images/human-climb-stairs/obj_render.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-climb-stairs/with_obj_render0.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-climb-stairs/with_obj_render1.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-climb-stairs/with_obj_render2.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-climb-stairs/with_obj_render3.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-climb-stairs/with_obj_render4.gif">
-            </div>
-          </div>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-full-width">
-                <p><i>climbing stairs</i></p>
-            </div>
-          </div>
-
-          <!-- sitting on stairs -->
-          <div class="example-grid-cat" style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="square-image">
-              <img src="static/images/human-sit-stairs/obj_render.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-sit-stairs/with_obj_render0.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-sit-stairs/with_obj_render1.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-sit-stairs/with_obj_render2.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-sit-stairs/with_obj_render3.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-sit-stairs/with_obj_render4.gif">
-            </div>
-          </div>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-full-width">
-                <p><i>sitting on stairs</i></p>
-            </div>
-          </div>
-
-          <!-- sitting on a bench -->
-          <div class="example-grid-cat" style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="square-image">
-              <img src="static/images/human-sit-bench-v0/obj_render.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-sit-bench-v0/with_obj_render0.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-sit-bench-v0/with_obj_render1.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-sit-bench-v0/with_obj_render2.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-sit-bench-v0/with_obj_render3.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/human-sit-bench-v0/with_obj_render4.gif">
-            </div>
-          </div>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-full-width">
-                <p><i>sitting on a bench</i></p>
-            </div>
-          </div>
-
-          <!-- holding a TV -->
-          <div class="example-grid-cat" style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="square-image">
-              <img src="static/images/smplh-hold-tv-v3-1-lsa21000-gs50-bad/obj_render.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-hold-tv-v3-1-lsa21000-gs50-bad/with_obj_render0.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-hold-tv-v3-1-lsa21000-gs50-bad/with_obj_render1.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-hold-tv-v3-1-lsa21000-gs50-bad/with_obj_render2.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-hold-tv-v3-1-lsa21000-gs50-bad/with_obj_render3.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-hold-tv-v3-1-lsa21000-gs50-bad/with_obj_render4.gif">
-            </div>
-          </div>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-full-width">
-                <p><i>holding a TV</i></p>
-            </div>
-          </div>
-
-          <!-- putting a TV on the floor -->
-          <div class="example-grid-cat" style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="square-image">
-              <img src="static/images/smplh-put-tv-v1-1-lsa21000-gs50-bad/obj_render.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-put-tv-v1-1-lsa21000-gs50-bad/with_obj_render0.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-put-tv-v1-1-lsa21000-gs50-bad/with_obj_render1.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-put-tv-v1-1-lsa21000-gs50-bad/with_obj_render2.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-put-tv-v1-1-lsa21000-gs50-bad/with_obj_render3.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-put-tv-v1-1-lsa21000-gs50-bad/with_obj_render4.gif">
-            </div>
-          </div>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-full-width">
-                <p><i>putting a TV on the floor</i></p>
-            </div>
-          </div>
-
-          <!-- raising a TV over head -->
-          <div class="example-grid-cat" style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="square-image">
-              <img src="static/images/smplh-raise-tv-v2-1-lsa21000-gs50-bad/obj_render.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-raise-tv-v2-1-lsa21000-gs50-bad/with_obj_render0.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-raise-tv-v2-1-lsa21000-gs50-bad/with_obj_render1.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-raise-tv-v2-1-lsa21000-gs50-bad/with_obj_render2.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-raise-tv-v2-1-lsa21000-gs50-bad/with_obj_render3.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-raise-tv-v2-1-lsa21000-gs50-bad/with_obj_render4.gif">
-            </div>
-          </div>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-full-width">
-                <p><i>raising a TV over head</i></p>
-            </div>
-          </div>
-
-          <!-- sitting on a ball -->
-          <div class="example-grid-cat" style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="square-image">
-              <img src="static/images/smplh-sit-ball-v0-1-lsa21000-gs50-bad/obj_render.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-sit-ball-v0-1-lsa21000-gs50-bad/with_obj_render0.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-sit-ball-v0-1-lsa21000-gs50-bad/with_obj_render1.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-sit-ball-v0-1-lsa21000-gs50-bad/with_obj_render2.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-sit-ball-v0-1-lsa21000-gs50-bad/with_obj_render3.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-sit-ball-v0-1-lsa21000-gs50-bad/with_obj_render4.gif">
-            </div>
-          </div>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-full-width">
-                <p><i>sitting on a ball</i></p>
-            </div>
-          </div>
-
-          <!-- using a telescope -->
-          <div class="example-grid-cat" style="display: flex; justify-content: space-between; align-items: center;">
-            <div class="square-image">
-              <img src="static/images/smplh-use-telescope-v0-nolosses-1/obj_render.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-use-telescope-v0-nolosses-1/with_obj_render0.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-use-telescope-v0-nolosses-1/with_obj_render1.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-use-telescope-v0-nolosses-1/with_obj_render2.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-use-telescope-v0-nolosses-1/with_obj_render3.gif">
-            </div>
-            <div class="square-image">
-              <img src="static/images/smplh-use-telescope-v0-nolosses-1/with_obj_render4.gif">
-            </div>
-          </div>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-full-width">
-                <p><i>using a telescope</i></p>
-            </div>
+          <div id="dreamhoi-displays" style="display: flex; justify-content: space-around; flex-flow: row wrap; gap: 1em;">
           </div>
 
         </div>

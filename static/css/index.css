@@ -129,9 +129,27 @@ body {
   background: #000000;
 }
 
-.eql-cntrb { 
+.eql-cntrb {
   font-size: smaller;
 }
 
 
+
+/* Thomas */
+.human-choice {
+  padding: .5em 1em;
+  border: 1px solid grey;
+  margin-left: -1px;
+  cursor: pointer;
+}
+
+.human-choice.active {
+  background-color: hsl(204, 86%, 53%);
+  color: white;
+}
+
+.dreamhoi-display {
+  flex-basis: 30%;
+  min-width: 150px;
+}
 
