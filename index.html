@@ -227,7 +227,9 @@
         <div class="column is-full-width">
           <h2 class="title is-3">More Results</h2>
 
-          <ul style="display: flex; justify-content: center; align-items: center; flex-flow: row wrap">
+          <p><i>Select an input human identity.</i></p>
+
+          <ul style="display: flex; justify-content: center; align-items: center; flex-flow: row wrap; margin-bottom: 2em">
             <li data-human-choice="obj_render" class="human-choice">No human</li>
             <li data-human-choice="with_obj_render0" class="human-choice active">Human 1</li>
             <li data-human-choice="with_obj_render1" class="human-choice">Human 2</li>
@@ -236,6 +238,9 @@
             <li data-human-choice="with_obj_render4" class="human-choice">Human 5</li>
           </ul>
 
+          <p>Generated human poses from DreamHOI:</p>
+
+          <!-- Managed in dreamhoi-results-display.js -->
           <div id="dreamhoi-displays" style="display: flex; justify-content: space-around; flex-flow: row wrap; gap: 1em;">
           </div>
 
