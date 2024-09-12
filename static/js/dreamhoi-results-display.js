@@ -10,6 +10,7 @@ const results = [
     {experiment: "smplh-sit-ball-v0-1-lsa21000-gs50-bad", prompt: "sitting on a ball"},
     {experiment: "smplh-jump-sofa-v0-1-lsa21000-gs50-bad", prompt: "jumping onto a sofa"},
     {experiment: "smplh-nap-sofa-v0-1-lsa21000-gs50-bad", prompt: "napping on a sofa"},
+    {experiment: "smplh-sit-sofa-v0-1-lsa21000-gs50-bad", prompt: "sitting on a sofa"},
     {experiment: "smplh-open-wardrobe-v0-1-lsa21000-gs50-bad", prompt: "opening a wardrobe"},
     {experiment: "smplh-hold-tv-v3-1-lsa21000-gs50-bad", prompt: "holding a TV"},
     {experiment: "smplh-put-tv-v1-1-lsa21000-gs50-bad", prompt: "putting a TV on the floor"},
