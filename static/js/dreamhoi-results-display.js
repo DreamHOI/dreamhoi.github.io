@@ -41,8 +41,11 @@ $(document).ready(() => {
     $(".human-choice").on("click", e => {
         $(".human-choice").removeClass("active");
         $(e.target).addClass("active");
-        humanIdx = e.target.getAttribute("data-human-choice");
+        humanIdx = $(e.target).attr("data-human-choice");
         updateVideos();
+    });
+    $("#teaser-video").on("click mouseenter", e => {
+        $(e.target).attr("controls", "controls");
     });
     for (result of results) {
         $("#dreamhoi-displays").append(`
