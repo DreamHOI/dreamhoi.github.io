@@ -47,7 +47,7 @@ $(document).ready(() => {
     for (result of results) {
         $("#dreamhoi-displays").append(`
             <div class="dreamhoi-display square-image">
-                <video id="video-${result.experiment}" src="static/videos/renders/${result.experiment}/${humanIdx}.mp4" muted nocontrols autoplay loop></video>
+                <video id="video-${result.experiment}" src="static/videos/renders/${result.experiment}/${humanIdx}.mp4" muted nocontrols autoplay loop playsinline></video>
                 <p class="has-text-centered"><i>${result.prompt}</i></p>
             </div>
         `);
